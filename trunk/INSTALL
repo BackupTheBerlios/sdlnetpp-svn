@@ -1,0 +1,67 @@
+                         SDL_net++ Installation "Guide"
+
+1) edit config.mak
+
+    check that SDL_PREFIX and SDL_NET_PREFIX make sense for where you have
+        them installed.  The default should find SDL if it is already in 
+        your path.  It assumes SDL_net is in the same place.
+
+    change the INSTALL paths if you hate them.  It defaults to the same
+        locations that SDL is located.
+
+    change RANLIB to "true" is you don't need ranlib.
+
+    uncomment EXE if you need .exe (or other) suffixes on programs.
+
+2) make
+
+    this should make everything...including the tests :)
+
+3) try the programs in the "test" dir...make sure you have fun...
+    at least make sure they sorta work...
+
+4) (optional) make install
+
+    on some platforms this requires root or other administrative privilidges.
+        this sometimes depends on the INSTALL locations.
+
+    this will place all the headers into the INSTALL dir prefix (config.mak)
+    
+    the tests are NOT installed of course...
+
+5) send me pancakes...
+
+    okay, this is also optional...
+    
+6) you are ready to use SDL_net++ from the INSTALL prefix.
+
+    #include "SDL_net++.h"
+
+    int main()
+    {
+        if(!NPP::init())
+            NPP::error("NPP init");
+        ... do stuff ;) ...
+    }
+
+    compile with the INSTALL_INCDIR in your include path.
+    example:
+            c++ `sdl-config --cflags`  -c source.cc 
+
+    link to the SDL_net++ library in the INSTALL_LIBDIR.
+    example:
+            c++ -o program *.o `sdl-config --libs` -lSDL_net++
+
+    run program :)
+
+    rinse of bugs and repeat.
+
+7) why are you at step 7, only you can live the rest of your life.
+
+8) look now...the instructions have been over for awhile...
+
+9) ok so, how are you?  I haven't instructed you in a while.
+
+10) glad to hear that you are ok, maybe sleep deprived, but hey, aren't we all.
+
+11) ok, I have to go now. <click>

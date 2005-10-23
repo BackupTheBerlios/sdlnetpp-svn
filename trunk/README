@@ -1,0 +1,33 @@
+
+								   SDL_net++
+
+									 (NPP)
+
+								 Version 1.0.0
+
+This is a C++ wrapper for SDL_net, which is available at:
+	http://www.libsdl.org/projects/SDL_net/
+	
+It therefore requires SDL and SDL_net to be installed somewhere...
+
+SDL_net++ is written in C++.
+
+The current version supports Linux, though it may work on others
+
+This library is distributed under GNU LGPL version 2, which can be
+found in the file  "COPYING".  This license allows you to use SDL_net++
+freely in commercial programs as long as you link with a dynamic
+library, or make relinking with a static/dynamic library possible.
+
+The best way to learn how to use SDL_net++ is to check out the header files in
+the "src" subdirectory and the programs in the "test" subdirectory.
+The header files and test programs are well commented and always up to date.
+
+The test programs in the "test" subdirectory are in the public domain.
+
+If you need help with the library, or just want to discuss SDL related
+issues, you can join the #SDL channel at irc.freenode.org
+
+Enjoy!
+	Jon Atkins (jcatki AT jonatkins.org)
+
